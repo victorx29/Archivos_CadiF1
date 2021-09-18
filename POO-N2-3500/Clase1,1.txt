@@ -1,0 +1,85 @@
+ clase Alumno
+ 
+	//atributos complementarios
+	definir nombre como caracter
+	
+	//entradas
+    definir examen1 como real
+	definir examen2 como real
+	definir examen3 como real
+	definir trabajo_prac como real
+	definir evaluacionContinia como real
+	
+	//salidas
+	definir notaSobre100 como real
+	definir notaSobre20 como real
+	definir notaSobre4 como real
+	
+	metodo calcularNotaSobre100()
+	
+    notaSobre100= examen1 + examen2 + examen3 + trabajo + evaluacionContinia
+	
+	fin metodo
+	
+	metodo calcularNotaSobre20()
+	
+		   calcularNotaSobre100()
+		   notaSobre20 =  notaSobre100/5
+		   
+    fin metodo
+	
+	metodo calcularNotaSobre4()
+	
+			calcularNotaSobre100()
+			notaSobre4 = notaSobre100/4
+			
+	fin metodo
+	
+	metodo mostrarSalida
+	
+	  //salidas
+		mostrar "El alumno ", nombre
+		mostrar "Obtuvo " , notaSobre100 , " pts sobre 100"
+		mostrar "Obtuvo " , notaSobre20 , " pts sobre 20"
+		mostrar "Obtuvo " , notaSobre4 , " pts sobre 4"	
+		
+	fin metodo
+		
+    
+	
+fin clase
+
+algoritmo clase1_2
+  //variables
+   //definimos variables usando como tipo las clases
+   // que ya definimos
+	definir mat como Materia
+	definir alum1 como Alumno
+	
+	mat = nuevo Materia()
+	mat.nombre = "Programacion Orientada a Objetos"
+	
+	alum1 = nuevo Alumno()
+	
+	mostrar "introduzca el nombre del Alumno"
+	leer alum1.nombre
+	mostrar "introduzca la nota del examen 1:"
+	leer alum1.examen1
+	mostrar "introduzca la nota del examen 2:"
+	leer alum1.examen2
+	mostrar "introduzca la nota del examen 3:"
+	leer alum1.examen3
+	mostrar "introduzca la nota del trabajo practico:"
+	leer alum1.trabajo_prac
+	mostrar "introduzca la nota de la evalucion continua:"
+	leer alum1.evaluacionContinia
+	
+  //Calculos
+	
+	alum1.calcularNotaSobre100()
+	alum1.calcularNotaSobre20()
+	alum1.calcularNotaSobre4()
+	
+	alum1.mostrarSalida()
+	
+fin algoritmo

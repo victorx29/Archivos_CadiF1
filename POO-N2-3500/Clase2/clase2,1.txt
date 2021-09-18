@@ -1,0 +1,76 @@
+ 
+clase Persona
+
+	privado definir nombre como caracter
+	privado definir edad como entero
+	
+	publico meotodo Persona()
+		nombre = "sin nombre"
+		edad = 18
+	
+	fin meotodo
+	
+	publico metodo getNombre() como caracter
+		retornar nombre
+	fin metodo
+	
+	publico metodo getEdad() como entero
+		retornar edad
+	fin metodo
+	
+	publico meotodo setNombre(nom) como entero
+		nombre = nom 
+	fin metodo
+	
+	publico metodo setEdad(dato) como entero
+		edad = dato
+	fin metodo
+	
+	
+fin clase
+
+clase Factura
+	privado definir vendedor
+fin clase
+
+clase Vehiculo
+	
+	privado definir propietario como Persona
+	privado definir precio como numero
+	privado definir marca como caracter
+	
+	publico metodo Vehiculo()
+		precio = 100
+		marca = "indefinida"
+		propietario = nuevo Persona()
+	fin meotodo
+	
+	publico metodo getPropietario() como Persona
+		retornar propietario
+	fin metodo
+	
+	publico meotodo setPropietario(dato) como Persona
+		propietario = dato
+	fin metodo
+	
+	publico metodo getMarca() como caracter
+		retornar marca
+	fin metodo
+	
+	publico metodo setMarca(dato) como caracter
+		marca= dato
+	fin metodo
+	
+	publico metodo setPrecio(dato) como entero
+		precio = dato
+	fin metodo
+	
+	publico metodo getPrecio() como entero
+		retornar precio
+	fin metodo
+	
+	publico metodo calcularInicial() como numero
+		retornar precio*0.3
+	fin metodo
+
+fin clase

@@ -1,0 +1,33 @@
+
+algoritmo clase2
+	
+	definir alum como Alumno
+	definir fechaIni como fecha
+	
+	alum = nuevo Alumno()
+	fechaIni = nuevo Fecha()
+	alum1 = nuevo Alumno()
+	
+	fechaIni.leerFecha()
+	alum.leerAlumno()
+	
+	mostrar "El alumno ", alum.nombre
+	
+	mostrar " nacio en el año ", alum.fechaNac.año
+	
+	alum.fechaInscripcion = fechaIni
+	
+	fechaIni.dia = fechaIni.dia + 10
+	
+	alum.fechaInscripcion.mes = alum.fechaNac.mes
+	
+	si alum1.fechaNac.mes = alum.fechaNac.mes entonces
+		
+		mostrar "Los alumnos " alum1.nombre, " Y " alum.nombre
+		mostrar "nacieron el mismo mes"
+		
+	fin si
+	
+	alum1.compararMesDeAlumno(alum1.fechaNac.mes, alum.fechaNac.mes, alum1.nombre, alum.nombre)
+	
+fin algoritmo

@@ -1,0 +1,35 @@
+header{
+    background: blue
+}
+
+main{
+    background: aqua
+}
+
+section{
+    background: rebeccapurple
+}
+
+nav{
+    background: pink
+}
+
+article{
+    background: chocolate
+}
+footer{
+    background: blanchedalmond
+}
+
+.inicio{
+    background: green;
+    color:white
+}
+
+#holis{
+    background: purple;
+    color: aliceblue
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

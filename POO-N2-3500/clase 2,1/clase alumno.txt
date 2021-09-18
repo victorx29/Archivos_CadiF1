@@ -1,0 +1,68 @@
+clase Fecha
+
+	definir dia como entero
+	definir mes como entero
+	definir año como entero
+
+	metodo leerfecha(mensaje)
+		mostrar "introduzca la fecha de "
+		mostrar "introduzca el dia: "
+		leer dia
+		mostrar "introduzca el mes: "
+		leer mes
+		mostrar "introduzca el año: "
+	    leer año
+		
+	fin metodo
+	
+	metodo nroDeDiasDeUnMes()
+		segun mes
+		1,3,5,7,8,10,12: retornar 31
+		4,6,9,11: retornar 30
+		2: si año mod 4 == 0 entonces
+		fin segun
+	fin metodo
+	
+	metodo adelantarFecha(nroDias)	
+		si dia + nroDias <= nroDeDiasDeUnMes() entonces
+			dia = dia + nroDias
+		sino
+			dia = dia + nroDias - nroDeDiasDeUnMes
+			si mes > 12  entonces
+				mes = mes + 1
+			sino
+				mes = 1
+				año = año + 1
+			fin si
+		fin si
+		
+	fin metodo
+				
+fin clase
+
+
+clase alumno
+
+	definir nombre como caracter
+	definir fechaNac como fecha
+	definir fechainscripcion como fecha
+	
+	metodo LeerAlumno()
+		leer nombre
+		fechaNac.leerFecha()
+		fechaInscripcion.leerfecha()
+	fin metodo
+
+	metodo comprarMesdeAlumnos(mes1, mes2,nombre1,nombre2)
+		
+		si mes1 = mes2 entonces
+		
+		mostrar "Los alumnos " nombre1, " Y " nombre2
+		mostrar "nacieron el mismo mes"
+		
+	fin si
+		
+		
+	fin metodo
+	
+fin clase

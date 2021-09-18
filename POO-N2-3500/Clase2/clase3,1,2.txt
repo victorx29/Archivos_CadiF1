@@ -1,0 +1,49 @@
+algoritomo xyz
+
+	definir como vehiculo
+	definir p como persona
+	definir nombreMarc como caracter
+	definir precioVeh como real
+	definir edadProp como entero
+	
+	para i=i hasta 10 hacer
+	
+	mostrar "introduzca el nombre del propietario"
+	leer nombre
+	veh.setNombre(nombre)
+	
+	mostrar "Introduzca la marca del vehiculo"
+	leer nombreMarc
+	veh.setMarca(nombreMarc)
+	
+	mostrar "Introduzca el precio del vehiculo"
+	leer precioVeh
+	veh.setPrecio(precioVeh)
+	
+	mostrar "Introduzca la edad del propietario"
+	leer edadProp
+	p.setEdad(edadProp)
+	
+	si p.getEdad()>50 entonces
+		veh.setPrecio(veh.getPrecio()*0.9)
+	fin si
+	
+	mostrar "la inicial a pagar es " veh.calcularInicial()
+	
+	fin si
+	// opcion A
+		veh.getPropietario().setNombre("jose")
+		veh.getPropietario().setEdad(41)
+	
+	// opcion B
+		p = veh.getPropietario()
+		p.setNombre("jose")
+	
+	veh = nuevo vehiculo()
+	
+	veh.setMarca("Toyota")
+	veh.setPrecio(1500)
+	
+	mostrar "la inicial de" veh.getMarca()
+	mostrar " es " veh,calcularInicial()
+	
